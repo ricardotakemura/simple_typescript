@@ -27,27 +27,27 @@ export default class RestUserView implements UserView {
     }
 
     private routes(): void {
-        this.fastify.get('/user',async (request, response) => {
+        this.fastify.get("/user",async (request, response) => {
             const users = await this.listener.onGetAll();
             response.status(200);
             response.send({status: "ok", data: users});
         });
 
-        this.fastify.get('/user/:id', async (request, response) => {
+        this.fastify.get("/user/:id", async (request, response) => {
             const { id = "" } = request.params;
             const user = await this.listener.onGetOne(id);
             response.status(200);
             response.send({status: "ok", data: user});
         });
 
-        this.fastify.post('/user',async (request, response) => {
+        this.fastify.post("/user",async (request, response) => {
             const newUser = request.body;
             const user = await this.listener.onSave(newUser);
             response.status(201);
             response.send({status: "ok", data: user});
         });
 
-        this.fastify.delete('/user/:id', async (request, response) => {
+        this.fastify.delete("/user/:id", async (request, response) => {
             const { id = "" } = request.params;
             await this.listener.onDelete(id);
             response.status(200);

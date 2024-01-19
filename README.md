@@ -31,8 +31,8 @@ export const Config = {
     USER_MONGODB_COLLECTION: "users",
     USER_CSV_FILE: "data/users.csv",
     USER_GRPC_PROTO_PATH: "protos/route.user.proto",
-    USER_MODEL: 'mongodb', //pode ser "csv"
-    USER_VIEW: 'rest', //pode ser "grpc"
+    USER_MODEL: "mongodb", //pode ser "csv"
+    USER_VIEW: "rest", //pode ser "grpc"
 }
 ```
 
