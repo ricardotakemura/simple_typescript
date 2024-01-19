@@ -1,0 +1,13 @@
+{
+  "details": {
+    "methodFqn": "RouteUser.GetUser"
+  },
+  "requests": [
+    {
+      "location": "GetUser-request.json"
+    }
+  ],
+  "operationType": "unary",
+  "invokerName": "grpc",
+  "importStreamId": "b4958c51-42b5-4837-a410-16d54f89f7a9"
+}

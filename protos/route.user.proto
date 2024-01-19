@@ -1,0 +1,18 @@
+message User {
+    optional string id = 1;
+    optional string name = 2;
+}
+
+message UserId {
+    optional string id = 1;
+}
+
+message Empty {
+}
+
+service RouteUser {
+    rpc GetUser(UserId) returns (User) {};
+    rpc GetUsers(Empty) returns (stream User) {};
+    rpc RemoveUser(UserId) returns (User) {};
+    rpc RegisterUser(User) returns (User) {};
+}

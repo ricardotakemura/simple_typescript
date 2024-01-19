@@ -1,0 +1,19 @@
+{
+  "id": "75bfb3b6-fd28-45e3-b794-94b8a0239abe",
+  "importStreams": [
+    {
+      "id": "b4958c51-42b5-4837-a410-16d54f89f7a9",
+      "name": "proto-file",
+      "importerName": "ProtoFile",
+      "createMissingOperations": true,
+      "options": {
+        "files": [
+          "../../projects/simple/protos/route.user.proto"
+        ],
+        "importPaths": []
+      }
+    }
+  ],
+  "authConfigs": [],
+  "certificates": []
+}

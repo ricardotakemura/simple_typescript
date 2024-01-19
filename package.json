@@ -1,0 +1,23 @@
+{
+    "name": "simple",
+    "version": "0.0.1",
+    "description": "simple",
+    "author": "Ricardo Takemura",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",  
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "start": "GRPC_VERBOSITY=DEBUG GRPC_TRACE=all node bin/index.js"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.5",
+        "typescript": "^5.3.3",
+        "prettier": "^3.2.4"
+    },
+    "dependencies": {
+        "fastify": "^4.25.2",
+        "@grpc/grpc-js": "^1.9.14",
+        "mongodb": "^4.17.2"
+    }
+}
